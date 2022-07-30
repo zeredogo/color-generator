@@ -6,7 +6,7 @@ import Values from 'values.js'
 const App = () => {
   const [color, setColor] = useState('');
   const [error, setError] = useState(false);
-  const [list, setList] = useState([]);
+  const [list, setList] = useState(new Values('#800000').all(10));
   
   const handleSubmit =(e) => {
     e.preventDefault();
@@ -29,7 +29,7 @@ const App = () => {
             type='text'
             value={color}
             onChange={(e) => setColor(e.target.value)}
-            placeholder='#f15025'
+            placeholder='#800000'
             className={`${error ? 'error' : null}`}
           />
           <button className='btn' type='submit'>
@@ -50,6 +50,7 @@ const App = () => {
           )
         })}
       </section>
+      <h4 className="footer"><small>Krypto Zone &copy; 2022</small></h4>
     </>    
   );
 }
