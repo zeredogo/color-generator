@@ -245,12 +245,8 @@ input.error {
   margin: 0 auto;
   max-width: var(--fullWidth);
 }
-
-
-
 .logo {
-  
-  align-items: center;
+  width: 12rem;
 }
 .zone {
   color: var(--clr-primary-5);
