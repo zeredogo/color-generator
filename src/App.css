@@ -245,24 +245,12 @@ input.error {
   margin: 0 auto;
   max-width: var(--fullWidth);
 }
-.nav-links {
-  display: flex;
-  align-items: center;
-}
-.nav-links a {
-  text-transform: capitalize;
-  display: inline-block;
-  font-weight: bold;
-  margin-right: 0.5rem;
-  font-weight: 400;
-  letter-spacing: 2px;
-  font-size: 1.2rem;
-  padding: 0.25rem 0.5rem;
-  transition: var(--mainTransition);
-}
+
+
 
 .logo {
   width: 12rem;
+  align-items: center;
 }
 .zone {
   color: var(--clr-primary-5);
