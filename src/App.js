@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import SingleColor from './SingleColor';
 import './App.css';
 import Values from 'values.js'
+import Navbar from './Navbar';
 
 const App = () => {
   const [color, setColor] = useState('');
@@ -22,7 +23,9 @@ const App = () => {
 
   return (
     <>
+      <Navbar />
       <section className='container'>
+      
         <h3>color generator</h3>
         <form onSubmit={handleSubmit}>
           <input
